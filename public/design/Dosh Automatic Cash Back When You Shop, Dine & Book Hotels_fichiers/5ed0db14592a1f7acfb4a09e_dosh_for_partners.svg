@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="26px" viewBox="0 0 30 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>dosh_for_partners</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Consumer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-414.000000, -557.000000)">
+            <g id="dosh_for_partners" transform="translate(414.000000, 557.000000)">
+                <path d="M21.7950522,1.02658658 C24.1032525,1.95240438 26.3310276,3.97164494 27.9556146,7.00449638 C29.572159,10.0373478 30.5935577,14.0838101 29.6204141,18.1222912 C28.6472704,22.1687535 25.6715418,26.2072347 22.3339004,25.9917426 C19.0043014,25.7762505 15.304747,21.2988041 11.8866804,18.8565605 C8.46057129,16.4222982 5.30790753,16.0152576 3.04796233,14.1316972 C0.788017128,12.2401557 -0.571166995,8.88007555 0.233083965,6.16647164 C1.03733493,3.44488654 4.01306348,1.38574004 6.78772929,0.539734111 C9.5543526,-0.306271815 12.1279557,0.0688440203 14.6050486,0.172599464 C17.0901841,0.26837372 19.486852,0.100768772 21.7950522,1.02658658 Z" id="Path" fill="#3C55AF" fill-rule="nonzero" opacity="0.200000003"></path>
+                <g id="terminal" transform="translate(8.000000, 5.500000)" stroke="#0B1D5F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <polyline id="Path" points="0 12 6 6 0 0"></polyline>
+                    <line x1="8" y1="14" x2="16" y2="14" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

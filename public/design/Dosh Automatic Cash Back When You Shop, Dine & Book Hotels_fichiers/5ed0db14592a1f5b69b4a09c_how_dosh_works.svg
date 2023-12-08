@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="33px" viewBox="0 0 25 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>how_dosh_works</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Consumer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-113.000000, -412.000000)">
+            <g id="how_dosh_works" transform="translate(112.000000, 411.000000)">
+                <path d="M7.50253349,8.39283283 C5.85933255,7.93219669 4.01034484,7.47164071 1.70647717,7.57826203 C-0.687422211,7.68905199 -2.9944646,9.86757395 -3,13.0717448 L-3,13.0953138 C-2.99536003,15.5760631 -1.61232308,18.668482 2.17193952,21.8906102 C13.515773,31.5493789 23.4314723,31.1709935 27.2129672,21.9440812 C28.0312212,19.9474553 29.9642902,15.7499528 28.4180304,11.5650202 C27.1787772,8.210997 22.9725775,5 21.3260731,5 C20.0054722,5 18.6971804,5.39029601 17.3126531,6.18160298 C13.4404752,10.3058437 10.9150286,9.34929817 7.50253349,8.39283283 Z" id="Fill-4" fill="#683CAF" fill-rule="nonzero" opacity="0.200000003" transform="translate(13.000000, 17.000000) scale(-1, 1) rotate(268.000000) translate(-13.000000, -17.000000) "></path>
+                <circle id="Oval" stroke="#29166F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="14" cy="17" r="10"></circle>
+                <path d="M11.09,14 C11.5754369,12.6200444 12.9853836,11.7914063 14.4271763,12.0387121 C15.868969,12.2860179 16.9221794,13.5371529 16.9200034,15 C16.9200034,17 13.92,18 13.92,18" id="Path" stroke="#29166F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="14.0050017" y1="21.5" x2="14.0050017" y2="22.5" id="Line" stroke="#29166F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

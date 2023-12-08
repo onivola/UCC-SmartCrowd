@@ -1,0 +1,15 @@
+#ul_acount {
+    top: 38px; 
+    left: -100px;
+}
+#dv_container {
+    max-width: 764px;
+    margin:0 auto;
+}
+#dv_amount {
+    float:right;
+}
+#dv_datetime {
+    font-size: 11px;
+margin-top: 30px;
+}

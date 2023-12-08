@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="154px" viewBox="0 0 140 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>security-graphic-3</title>
+    <defs>
+        <polygon id="path-1" points="0.434148936 0.569392538 13.1451064 0.569392538 13.1451064 48.4595828 0.434148936 48.4595828"></polygon>
+    </defs>
+    <g id="Consumer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-137.000000, -2836.000000)" id="security-graphic-3">
+            <g transform="translate(137.000000, 2836.000000)">
+                <path d="M140,70.0003704 C140,108.660045 108.65947,140 70.0007409,140 C31.3405302,140 0,108.660045 0,70.0003704 C0,31.3399552 31.3405302,0 70.0007409,0 C108.65947,0 140,31.3399552 140,70.0003704" id="Fill-15" fill="#84DBAB" opacity="0.100000001"></path>
+                <line x1="40.915493" y1="89.7183099" x2="40.915493" y2="140" id="Stroke-9" stroke="#84DBAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="99.084507" y1="89.7183099" x2="99.084507" y2="99.5774648" id="Stroke-10" stroke="#F4F2EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="67.5352113" y1="102.535211" x2="67.5352113" y2="152.816901" id="Stroke-11" stroke="#F4F2EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="56.6901408" y1="88.7323944" x2="56.6901408" y2="107.464789" id="Stroke-13" stroke="#84DBAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="77.3943662" y1="89.7183099" x2="77.3943662" y2="126.197183" id="Stroke-14" stroke="#84DBAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <g id="Group-7" transform="translate(34.507042, 33.521127)">
+                    <g id="Group-3" transform="translate(40.957447, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <polygon id="Fill-1" fill="#84DBAB" mask="url(#mask-2)" points="0.434148936 96.3497731 13.1451064 96.3497731 13.1451064 0.569392538 0.434148936 0.569392538"></polygon>
+                    </g>
+                    <g id="Group-6" stroke="#F4F2EA" stroke-width="2">
+                        <path d="M0.515617021,48.6043027 C0.515617021,38.8855202 0.515617021,24.3073464 0.515617021,4.86978131 C0.515617021,2.49485389 2.45923404,0.569097516 4.85785106,0.569097516 L64.964766,0.569097516 C67.3626383,0.569097516 69.3062553,2.49485389 69.3062553,4.86978131 C69.3062553,24.3614031 69.3062553,38.9801195 69.3062553,48.7259304" id="Path"></path>
+                    </g>
+                </g>
+                <line x1="116.338028" y1="82.3239437" x2="22.6760563" y2="82.3239437" id="Stroke-8" stroke="#0F5B49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

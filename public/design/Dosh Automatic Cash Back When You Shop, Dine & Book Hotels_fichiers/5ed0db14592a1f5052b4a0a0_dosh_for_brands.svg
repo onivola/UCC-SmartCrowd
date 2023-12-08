@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="28px" viewBox="0 0 31 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>dosh_for_brands</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Consumer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-415.000000, -415.000000)">
+            <g id="dosh_for_brands" transform="translate(410.000000, 412.000000)">
+                <path d="M28.2656839,12.7704363 C30.5797811,16.0954133 32.3901291,18.7131214 33.6888571,22.062487 C34.979714,25.4037231 35.7668219,29.4766167 33.8620208,31.0700042 C31.9650909,32.6633917 27.3841231,31.7772732 24.1963363,31.5415168 C21.0085494,31.3057605 19.2139435,31.7122369 16.8132645,31.7203665 C14.4125855,31.7366255 11.4058335,31.3626672 8.33611284,29.3384147 C5.26639218,27.3141622 2.13370288,23.647745 3.21991173,21.355218 C4.30612058,19.0545615 9.61122758,18.1277953 13.161084,15.0385746 C16.7109405,11.9493539 18.5212886,6.68954918 20.8275146,6.06357551 C23.1416117,5.44573136 25.9594579,9.45358876 28.2656839,12.7704363 Z" id="Path" fill="#683CAF" fill-rule="nonzero" opacity="0.200000003" transform="translate(19.000000, 19.000000) rotate(-165.000000) translate(-19.000000, -19.000000) "></path>
+                <g id="offer" transform="translate(18.629410, 15.517037) rotate(-315.000000) translate(-18.629410, -15.517037) translate(5.129410, 7.517037)" stroke="#29166F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M25,0 L7,0 L0,8 L7,16 L25,16 C26.1045695,16 27,15.1045695 27,14 L27,2 C27,0.8954305 26.1045695,0 25,0 Z" id="Path"></path>
+                    <circle id="Oval" cx="8" cy="8" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

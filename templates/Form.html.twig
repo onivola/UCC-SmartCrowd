@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="{{ asset('assets/bootstrap-5.2.3-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/script.index.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <link href="{{ asset('assets/css/style.index.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    {% for message in app.session.flashBag.get('success') %}
+      <div class="alert alert-success">
+        {{ message }}
+      </div>
+    {% endfor %}
+    {{ form_start(form,{ 'attr': {'id': 'FormSingup'} }) }}
+        <div class="row">
+          <div class="col">{{ form_row(form.username,{ 'attr': {'class': 'rounded-0'} }) }}</div>
+          <div class="col">{{ form_row(form.email) }}</div>
+        </div>
+        {{ form_row(form.password) }}
+        <div class="mb-3">
+          {{ form_label(form.PMAdress) }}
+          {{ form_widget(form.PMAdress) }}
+          {{ form_help(form.PMAdress) }}
+          {{ form_errors(form.PMAdress) }}
+        </div>
+        <div class="text-center">{{ form_row(form.VALIDER,{ 'attr': {'class': 'btn-success rounded-0'} }) }}</div>
+    {{ form_end(form) }}
+
+    
+    <script>
+      $(document).ready(function() {
+        // Select the button by its ID or any other selector
+        var button = $('#user_VALIDER');
+
+        // Attach a click event handler to the button
+        button.click(function(event) {
+          event.preventDefault(); // Empêcher la soumission du formulaire par symfony
+          //alert(13);
+          $("#FormSingup").submit();
+        });
+      });
+    </script>
+   
+  </body>
+</html>

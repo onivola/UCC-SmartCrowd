@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="{{ asset('assets/bootstrap-5.2.3-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/script.index.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <link href="{{ asset('assets/css/style.index.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="border-bottom bg-white">
+      <nav class="navbar navbar-expand-lg container-sm  pb-3 pt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Investement
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-black ps-4 pe-4" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black ps-4 pe-4" href="#">Faq</a>
+              </li>
+            </ul>
+            <id class="d-flex" role="search">
+              <a class="btn btn-outline-link border border-0 ps-4 pe-4" data-bs-toggle="modal" data-bs-target="#ModalLogin">Log in</a>
+               <!--MODAL LOG IN-->
+               <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">LOG IN</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="form_login" method="POST">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input id="inl_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="validl_email" class="invalid-feedback">
+                            Please provide a valid Email.
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input id="inl_mdp" type="password" class="form-control" id="exampleInputPassword1">
+                          <div id="validl_mdp" class="invalid-feedback">
+                            Please provide a valid Password.
+                          </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        
+                      </form>
+                      <div class="text-center">
+                        <button id="button_login" type="submit" class="btn btn-primary ps-5 pe-5">LOG IN</button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--MODAL LOG IN-->
+              <button class="btn btn-info text-white rounded-pill" data-bs-toggle="modal" data-bs-target="#ModalSingUp"  type="submit">Sing up</button>
+
+              <!--MODAL SING UP-->
+              <div class="modal fade" id="ModalSingUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">SING UP</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="form_singin" method="POST" action="">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Username</label>
+                          <input id="in_username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="valid_username" class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input id="in_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="valid_email" class="invalid-feedback">
+                            Please provide a valid email.
+                          </div>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input id="in_mdp" type="password" class="form-control" id="exampleInputPassword1">
+                          <div id="valid_email" class="invalid-feedback">
+                            Please provide a valid email.
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Perfect Money Address</label>
+                          <input id="in_pm" type="text" class="form-control" id="exampleInputPassword1" placeholder="ex: UXXXXXXX">
+                          <div id="valid_pm" class="invalid-feedback">
+                            Please provide a valid Perfect Money address.
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Compte type</label><br>
+                              <input class="form-check-input mt-1 ms-2 me-3" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                Investor
+                              </label>
+                              <br>
+                              <input class="form-check-input  mt-2 ms-2 me-3" type="radio" name="gridRadios" id="gridRadios1" value="option1" disabled>
+                              <label class="form-check-label" for="gridRadios1">
+                                Admin
+                              </label>
+                          </div>
+                        
+                        
+                      </form>
+                      <div class="text-center">
+                        <button id="button_singin" type="submit" class="btn btn-primary ps-5 pe-5">SING UP</button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--MODAL SING UP-->
+            </id>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="container-sm">
+      <div class="bg-dark text-white text-center mb-5 mt-5 pb-5 pt-5">
+        <p class="fs-1  mt-0 mb-0">Invite Friends &</p>
+        <p class="fs-1 mt-0 mb-0">You Both Get Up To US$100</p>
+        <p class="mt-0 mb-5">Introduce your friends to the easiest way to get things done</p>
+        <button class="btn btn-outline-info text-white rounded-pill mt-0 mb-5 ps-5 pe-5" type="submit">Join us now</button>
+      </div>
+
+      <h2 class="fs-1 text-center  mt-5 mb-5 pb-5">How does it work?</h2>
+      <div class="row text-center">
+        <div class="col fw-light">
+          Spread the word by email or with your link via social sharing
+        </div>
+        <div class="col fw-light">
+          Your friend signs up to Invest & gets 10% off their first purchase
+        </div>
+        <div class="col fw-light">
+          You get 10% of their first order amount, up to US$100
+        </div>
+      </div>
+      <h2 class="fs-1 text-center  mt-5 mb-5 pt-5">Don't Let Your Friends Waste Another Minute</h2>
+      <p class="text-center mt-0 mb-0 fw-light">Nobody likes to waste time. That's why Fiverr empowers entrepreneurs to connect with pros who can help </p>
+      <p class="text-center mt-0 mb-0 fw-light">them do more with less. You've experienced this power. Now, you can share it and earn up to US$100 for every </p>
+      <p class="text-center mt-0 mb-0 fw-light">friend who signs up and makes their first order.</p>
+      
+      <!-- FAQ-->
+      <h2 class="fs-1 text-center  mt-5 mb-5 pb-5">Frequently Asked Questions</h2>
+      <div class="d-flex align-items-start ">
+        <div class="nav flex-column nav-pills dv_faq1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link dv_faq1 alink active mb-3" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Who can join the Referral Program?</a>
+          <a class="nav-link dv_faq1 alink mb-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Where can I find my personalized link?</a>
+          <a class="nav-link dv_faq1 alink mb-3" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">How many friends can I refer?</a>
+          <a class="nav-link dv_faq1 alink mb-3" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">How much credit can I earn?</a>
+          <a class="nav-link dv_faq1 alink mb-3" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">How can I redeem my credits?</a>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active ps-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">Any GetResponse customer with a paid account can participate in the Referral Program. Don’t have an account? Set one up here.</div>
+          <div class="tab-pane fade ps-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">Log in to your account and navigate to the Refer a friend area</div>
+          <div class="tab-pane fade ps-5" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">As many as you like! There’s no limit on how many friends you refer. But there is a cap on how many credits you receive each year.</div>
+          <div class="tab-pane fade ps-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">You can get up to $480 worth of credits per year, regardless of how many people you refer.</div>
+          <div class="tab-pane fade ps-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">Go to the Refer a friend area in your account and click Redeem credits. Your credits will be applied to your next bill.</div>
+        </div>
+      </div>
+      <!-- FAQ-->
+      <div class=" text-center mb-5 mt-5 pb-5 pt-5">
+        <p class="fs-1  mt-0 mb-5">Join our Telegram Channel</p>
+        <button class="btn btn-info text-white rounded-pill mt-0 mb-5 ps-5 pe-5" type="submit">Telegram</button>
+      </div>
+    </div>
+    <footer>
+        <p class="bg-white text-center fw-light border-top">Copyright © 2022 Investement. </p>
+    </footer>
+  </body>
+</html>

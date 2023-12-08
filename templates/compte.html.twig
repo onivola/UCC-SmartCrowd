@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="{{ asset('assets/bootstrap-5.2.3-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/js/script.compte.js') }}"></script>
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.acount.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="border-bottom bg-white">
+        <nav class="navbar container-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Investement
+              </a>
+            
+                <div class="d-flex" role="search">
+                    <div class="dropdown">
+                       
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                          </a>
+                        <ul class="dropdown-menu border" id="ul_acount">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+          </nav>
+
+    </div>
+    <div id="dv_container">
+        <!--PURCHASE-->
+        <div  class="bg-white border mt-5 mb-5 pt-5 pb-5">
+            <!--
+            <h1 class="text-center">Purchase</h1>
+            <div class="text-center">
+                purchase before reffering friends
+            </div>
+            <div class="text-center  mt-4 mb-4 pt-4 pb-4">
+                <button type="button" class="btn btn-success">PURCHASE</button>
+            </div>
+            -->
+            <h1 class="text-center mb-4 fs-2">Balance</h1>
+            <h1 class="text-center text-success fw-semibold">
+                42$
+            </h1>
+            <div class="text-center  mt-2 mb-2 pt-4 pb-4">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#withdrawModal">WITHDRAW</button>
+                
+               
+            </div>
+
+        </div>
+         <!-- Modal -->
+         <div class="modal fade" id="withdrawModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">WITHDRAW</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form_withdraw" method="POST" action="">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Amount</label>
+                          <input type="text" class="form-control" id="in_amount" aria-describedby="emailHelp">
+                          <input id="in_capital" type="hidden" value="42" />
+                          <div id="valid_amount" class="invalid-feedback">
+                            Please provide a valid amount.
+                          </div>
+                          <div id="valid_fund" class="invalid-feedback">
+                            You do not have enough funds
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Address PM</label>
+                          <input type="text" class="form-control" value="U25060" id="exampleInputPassword1" disabled>
+                        </div>
+                       
+                        
+                      </form>
+                        <div class="text-center mt-4 mb-4">
+                            <button id="button_withdraw" type="submit" class="btn btn-success">WITHDRAW</button>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--REFFERAL LINK-->
+        <div  class="bg-white border mt-5 mb-5 pt-5 pb-5 pe-5 ps-5">
+            <h1 class="text-center mb-3 fs-2">Your refferal link</h1>
+            <fieldset disabled>
+                <div class="mb-3">
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="http://investement/12586">
+                  </div>
+            </fieldset>
+           
+        </div>
+        <!--LIST REFFERAL-->
+        <div  class="bg-white border mt-5 mb-5 pt-5 pb-5 pe-5 ps-5">
+            <h1 class="text-center mb-3 fs-2">Your refferal</h1>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <div>
+                    <div id="dv_amount" class="badge bg-success rounded-pill">-14$</div>
+                    <div id="dv_datetime" class="text-muted">10/10/2022</div>
+                </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                    <div>
+                        <div id="dv_amount" class="badge bg-success rounded-pill">-14$</div>
+                        <div id="dv_datetime" class="text-muted">10/10/2022</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <div>
+                    <div id="dv_amount" class="badge bg-success rounded-pill">-14$</div>
+                    <div id="dv_datetime" class="text-muted">10/10/2022</div>
+                </div>
+                </li>
+              </ol>
+              <h1 class="text-center mb-3 mt-3 fs-2">Withdraw</h1>
+              <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Subheading</div>
+                      Content for list item
+                    </div>
+                    <div>
+                        <div id="dv_amount" class="badge bg-danger rounded-pill">-14$</div>
+                        <div id="dv_datetime" class="text-muted">10/10/2022</div>
+                    </div>
+                    
+                  </li>
+                </ol>
+        </div>
+    </div>
+    <footer>
+        <p class="bg-white text-center fw-light border-top">Copyright © 2022 Investement. </p>
+    </footer>
+  </body>
+</html>
